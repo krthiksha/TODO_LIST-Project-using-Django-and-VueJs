@@ -1,0 +1,100 @@
+
+
+<div>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col"></th>
+                    <!-- <th scope="col">Id</th> -->
+                    <th scope="col">Task Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- looping through all tasks -->
+                    <tr v-for="task in tasks" :key="task.id">
+                        <th scope="row">
+                            <!-- checkboxes -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </th>
+                        <!-- <td>{{ task.id }}</td> -->
+                        <td>{{ task.name }}</td>
+                        <td>{{ task.description }}</td>
+
+                        
+                        <td>
+                            <span v-if="task.status==='C'" style="color: green;"><b>Completed</b></span>
+                            <span v-else-if="task.status==='P'" style="color: crimson;"><b>Pending</b></span>
+                            <span v-else-if="task.status==='I'" style="color: darkorange;"><b>In Process</b></span>
+                        </td>
+
+                        <!-- <td>
+                            <span v-if="task.status==='C'"
+                            class="badge rounded-pill text-bg-success" style="font-size: small;">
+                            Completed</span>
+                            <span v-else-if="task.status==='P'"
+                            class="badge rounded-pill text-bg-danger" style="font-size: small;"
+                            >Pending</span>
+                            <span v-else-if="task.status==='I'"
+                            class="badge rounded-pill text-bg-warning" style="font-size: small;">
+                            In Process</span>
+                        </td> -->
+
+                        <!-- styles for task status -->
+                        <!-- <td>
+                            <span v-if="task.status === 'C'"
+                                
+                                style="font-size: small; gap: 5px; color: green">
+                                <i class="bi bi-check-circle-fill"></i> Completed
+                            </span>
+                            <span v-else-if="task.status === 'P'"
+                                style="font-size: small; gap: 5px; color: crimson;">
+                                <i class="bi bi-exclamation-triangle-fill"></i> Pending
+                            </span>
+                            <span v-else-if="task.status === 'I'"
+                                style="font-size: small; gap: 5px; color: darkorange">
+                                <i class="bi bi-hourglass-split"></i> In Process
+                            </span>
+                            </td> -->
+
+                            
+
+                        <td>
+
+                            <!-- EDIT Button-->
+                            <button type="button" 
+                            class="btn btn-outline-primary mr-3"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#TaskModal"
+                            @click="EditTask(task)" 
+                            ><i class="bi bi-pencil-fill"></i></button>
+
+                            <!-- DELETE Button -->
+                            <button type="button" 
+                            class="btn btn-outline-danger"
+                            @click="DeleteTask(task.id)"
+                            ><i class="bi bi-trash3-fill"></i></button>
+
+                            
+                        </td>
+                    </tr>
+                </tbody>
+                </table>  
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
