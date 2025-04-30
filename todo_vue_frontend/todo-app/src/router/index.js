@@ -12,6 +12,10 @@ import Category from "../views/todos/Category.vue";
 
 const routes = [
   {
+    path: '/',
+    redirect: '/dashboard'
+  },
+  {
     path: '/todo',
     name: 'todo',
     component: TodoList

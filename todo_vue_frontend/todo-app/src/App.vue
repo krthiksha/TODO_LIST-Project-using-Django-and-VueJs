@@ -46,9 +46,9 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
-      <li class="nav-item">
-        <a href="#" class="nav-link"><b>Hello {User}!</b></a>
-      </li>
+      <!-- <li class="nav-item">
+        <a href="#" class="nav-link"><b>Welcome !</b></a>
+      </li> -->
       <li class="nav-item ">
         <router-link to="#" class="nav-link">
           <i class="fa-solid fa-right-to-bracket"></i>
