@@ -27,7 +27,8 @@ import "ag-grid-community/styles/ag-theme-quartz.css";
 // let websocketURL = "";
  
 if (process.env.NODE_ENV === "development") {
-  axios.defaults.baseURL = "http://localhost:8000/api/v1/";  // Change to port 8000
+  // axios.defaults.baseURL = "http://localhost:8000/api/v1/";  // Change to port 8000  -- local host
+  axios.defaults.baseURL = "https://todo-app-djangobackend.onrender.com/" // use this BackendURL for production 
 } else {
   axios.defaults.baseURL = "https://sfcsdev.xtractautomation.com/api/v1/";
 }

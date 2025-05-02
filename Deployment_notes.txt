@@ -1,0 +1,10 @@
+
+LIVE APP DEMO LINK ==> 
+
+=> Backend deployed using render 
+tech stack :  Django DRF 
+live backend link :  https://todo-app-djangobackend.onrender.com/
+
+=> Frontend deployed using vercel 
+tech stack : VueJS 
+live Frontend link : 
