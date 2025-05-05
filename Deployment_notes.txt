@@ -7,4 +7,4 @@ live backend link :  https://todo-app-djangobackend.onrender.com/
 
 => Frontend deployed using vercel 
 tech stack : VueJS 
-live Frontend link : 
+live Frontend link : https://todo-list-project-using-django-and-vue-js.vercel.app/dashboard
