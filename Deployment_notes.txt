@@ -8,3 +8,12 @@ live backend link :  https://todo-app-djangobackend.onrender.com/
 => Frontend deployed using vercel 
 tech stack : VueJS 
 live Frontend link : https://todo-list-project-using-django-and-vue-js.vercel.app/dashboard
+
+
+
+
+===== NOTES: =====
+= Drawback of render 
+- Hitting the first API Call takes 90 seconds time to load the data 
+(But it will work fast from the 2nd API call)
+
