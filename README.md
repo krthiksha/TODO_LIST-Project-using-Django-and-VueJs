@@ -1,6 +1,10 @@
 ### Live Demo Link:
 https://todo-list-project-using-django-and-vue-js.vercel.app/dashboard
 
+Note: Since I used Render for backend deployment, the application may take a few seconds to load data on the first API call.
+Please wait a moment for the data to appear, and then you can use the application efficiently.
+
+
 ### ToDo App - Dashboard
 ![image](https://github.com/user-attachments/assets/4834755c-8d57-4711-a48a-36a596f03979)
 
